@@ -24,14 +24,15 @@
           <!-- lista navbar -->
           <div class="navbar-list d-f">
             <ul class="d-f">
-              <li v-for="links in navbarList.link">
+              <li  class="d-f"
+                   v-for="links in navbarList.link">
                 <a href="#">{{ links }}</a>
               </li>
             </ul>
             <a href="#"><i :class=" 'fas ' + navbarList.iconNavbar"></i></a>
           </div>
 
-          <div class="account">
+          <div class="account d-f">
             <a href="#">{{ account.link }}</a>
             <a href="#"><i :class=" 'fas ' + account.icon"></i></a>
           </div>
