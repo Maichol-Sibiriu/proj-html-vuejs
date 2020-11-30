@@ -3,8 +3,58 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
+    <div id="wplms">
 
+      <!-- header logo e navbar -->
+      <header>
+
+        <section class="container d-f">
+
+          <!-- logo -->
+          <div class="logo d-f">
+            <img :src=" './img/' + img + '.png' " alt="">
+          </div>
+
+          <!-- lista navbar -->
+          <div class="navbar-list d-f">
+            <ul class="d-f">
+              <li v-for="links in navbarList.link">
+                <a href="#">{{ links }}</a>
+              </li>
+            </ul>
+            <a href="#"><i :class=" 'fas ' + navbarList.iconNavbar"></i></a>
+          </div>
+
+          <div class="account">
+            <a href="#">{{ account.link }}</a>
+            <a href="#"><i :class=" 'fas ' + account.icon"></i></a>
+          </div>
+
+        </section>
+
+
+      </header>
+
+      <!-- main corpo centrale (6 sezioni) -->
+      <main>
+
+      </main>
+
+      <!-- footer logo e 3 liste link -->
+      <footer>
+
+      </footer>
+
+    </div>
+    <!-- javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./js/main.js" type="text/javascript"></script>
   </body>
 </html>

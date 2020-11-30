@@ -1,1 +1,49 @@
 /* general style */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+
+a{
+  color: white;
+}
+
+/* utility */
+.d-f{
+  display: flex;
+}
+
+/* layout */
+.container{
+  width: 70%;
+  margin: 0 auto;
+}
+
+/* header */
+header{
+  background-color: black;
+  justify-content: space-between;
+}
+
+.logo,
+.navbar-list,
+.account{
+  flex-basis: 33%;
+}
+
+.logo img{
+  width: 80px;
+}
+
+.navbar-list ul li{
+  margin-left: 20px;
+}
+
+.account{
+  text-align: right;
+}
