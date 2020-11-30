@@ -7,6 +7,7 @@
 
 body{
   font-family: 'Open Sans', sans-serif;
+  color: white;
 }
 
 a{
@@ -14,28 +15,85 @@ a{
   color: white;
 }
 
+h1,
+h2,
+h3,
+h4{
+  font-weight: 400;
+}
+
+p{
+  margin: 20px;
+  font-size: 12px;
+}
+
 /* utility */
 .d-f{
   display: flex;
+}
+
+.t-u{
+  text-transform: uppercase;
+}
+
+.blue{
+  background-color: #515262;
+}
+
+.white{
+  background-color: #ffffff;
+}
+
+.grey{
+  background-color: #e1dace;
+}
+
+.orange{
+  background-color: #faae2c;
+}
+
+.btn{
+  padding: 10px 25px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.orange-btn{
+  color: white;
+  background: #fdaf2a;
 }
 
 /* layout */
 .container{
   width: 70%;
   margin: 0 auto;
+  text-align: center;
 }
 
-/* header */
+section{
+  padding: 40px;
+}
+
+footer{
+  padding: 10px 0px 40px;
+}
+
+/* header navbar*/
 header{
   background-color: black;
-  justify-content: space-between;
-  height: 300px;
+  /* background-image: url('./img/backimg.png'); */
+  height: 500px;
+  position: relative;
 }
 
-header section{
+header .navbar{
   font-size: 11px;
   text-transform: uppercase;
   font-weight: bold;
+  justify-content: space-between;
 }
 
 .logo{
@@ -54,7 +112,8 @@ header section{
   width: 80px;
 }
 
-.navbar-list{
+.navbar-list,
+.account{
    justify-content: flex-end;
    align-items: flex-end;
 }
@@ -63,11 +122,6 @@ header section{
 .navbar-list > a,
 .account a:last-child{
   margin-left: 20px;
-}
-
-.account{
-  justify-content: flex-end;
-  align-items: flex-end;
 }
 
 /* hover navbar */
@@ -92,3 +146,24 @@ header section{
   left: 50%;
   transform: translateX(-50%);
 }
+
+/* header jumbotron */
+header .jumbotron-text{
+  margin-top: 150px;
+}
+
+header .jumbotron-text h1{
+  font-size: 35px;
+}
+
+.jumbotron-text .ico-jumbotron{
+  position: absolute;
+  top: 25%;
+  right: 0;
+  padding: 6px;
+  background-color: #232423;
+  font-size: 11px;
+  border-radius: 2px;
+}
+
+/* main */

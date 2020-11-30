@@ -14,7 +14,7 @@
       <!-- header logo e navbar -->
       <header>
 
-        <section class="container d-f">
+        <div class="navbar container d-f">
 
           <!-- logo -->
           <div class="logo d-f">
@@ -25,19 +25,29 @@
           <div class="navbar-list d-f">
             <ul class="d-f">
               <li  class="d-f"
-                   v-for="links in navbarList.link">
-                <a href="#">{{ links }}</a>
+                   v-for="link in links">
+                <a href="#">{{ link }}</a>
               </li>
             </ul>
-            <a href="#"><i :class=" 'fas ' + navbarList.iconNavbar"></i></a>
+            <a href="#"><i :class=" 'fas ' + search"></i></a>
           </div>
 
+          <!-- account login con store -->
           <div class="account d-f">
             <a href="#">{{ account.link }}</a>
             <a href="#"><i :class=" 'fas ' + account.icon"></i></a>
           </div>
 
-        </section>
+        </div>
+
+        <div class="jumbotron-text container">
+            <h1>One App for eLearning - Web or Mobile</h1>
+            <p><span class="t-u">wplms</span> is the most modern Learning management system for Web.</p>
+            <button  class="btn orange-btn t-u" type="button" name="button">get your app</button>
+            <div class="ico-jumbotron">
+              <a href="#"><i :class=" 'fas ' + collection"></i></a>
+            </div>
+        </div>
 
 
       </header>
@@ -45,10 +55,81 @@
       <!-- main corpo centrale (6 sezioni) -->
       <main>
 
+        <!-- free app -->
+        <section class="white container">
+          <div class="container">
+            <h2></h2>
+            <p></p>
+
+            <div class="">
+              <div class="">
+                <img src="" alt="">
+                <h4></h4>
+                <p></p>
+              </div>
+              <div class="">
+                <img src="" alt="">
+                <h4></h4>
+                <p></p>
+              </div>
+              <div class="">
+                <img src="" alt="">
+                <h4></h4>
+                <p></p>
+              </div>
+              <div class="">
+                <img src="" alt="">
+                <h4></h4>
+                <p></p>
+              </div>
+            </div>
+            <button  class="btn orange-btn" type="button" name="button">See all features <i class="fas fa-angle-right"></i></button>
+          </div>
+        </section>
+
+        <!-- device -->
+        <section class="blue">
+          <div class="container">
+            <h2></h2>
+            <p></p>
+          </div>
+        </section>
+
+        <!-- courses -->
+        <section class="white">
+          <div class="container">
+            <h2></h2>
+            <p></p>
+          </div>
+        </section>
+
+        <!-- brands -->
+        <section class="grey">
+          <div class="container">
+            <h2></h2>
+            <p></p>
+          </div>
+        </section>
+
+        <!-- customers -->
+        <section class="white">
+          <div class="container">
+            <h2></h2>
+            <p></p>
+          </div>
+        </section>
+
+        <!-- contact sales -->
+        <section class="orange">
+          <div class="container">
+            <h2></h2>
+            <p></p>
+          </div>
+        </section>
       </main>
 
       <!-- footer logo e 3 liste link -->
-      <footer>
+      <footer class="blue">
 
       </footer>
 
