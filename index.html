@@ -13,43 +13,47 @@
 
       <!-- header logo e navbar -->
       <header>
+        <!-- <div class="black"> -->
 
-        <div class="navbar container d-f">
+          <!-- logo e navbar -->
+          <div class="navbar container d-f">
 
-          <!-- logo -->
-          <div class="logo d-f">
-            <img :src=" './img/' + img + '.png' " alt="">
+            <!-- logo -->
+            <div class="logo d-f">
+              <img :src=" './img/' + img + '.png' " alt="">
+            </div>
+
+            <!-- lista navbar -->
+            <div class="navbar-list d-f">
+              <ul class="d-f">
+                <li  class="d-f"
+                     v-for="link in links">
+                  <a href="#">{{ link }}</a>
+                </li>
+              </ul>
+              <a href="#"><i :class=" 'fas ' + search"></i></a>
+            </div>
+
+            <!-- account login con store -->
+            <div class="account d-f">
+              <a href="#">{{ account.link }}</a>
+              <a href="#"><i :class=" 'fas ' + account.icon"></i></a>
+            </div>
+
           </div>
 
-          <!-- lista navbar -->
-          <div class="navbar-list d-f">
-            <ul class="d-f">
-              <li  class="d-f"
-                   v-for="link in links">
-                <a href="#">{{ link }}</a>
-              </li>
-            </ul>
-            <a href="#"><i :class=" 'fas ' + search"></i></a>
-          </div>
-
-          <!-- account login con store -->
-          <div class="account d-f">
-            <a href="#">{{ account.link }}</a>
-            <a href="#"><i :class=" 'fas ' + account.icon"></i></a>
-          </div>
-
-        </div>
-
-        <div class="jumbotron-text container">
+          <!-- jumbotron e text jumbotron -->
+          <div class="jumbotron-text container">
             <h1>One App for eLearning - Web or Mobile</h1>
             <p><span class="t-u">wplms</span> is the most modern Learning management system for Web.</p>
             <button  class="btn orange-btn t-u" type="button" name="button">get your app</button>
-            <div class="ico-jumbotron">
-              <a href="#"><i :class=" 'fas ' + collection"></i></a>
-            </div>
-        </div>
+          </div>
 
-
+          <!-- gallery -->
+          <div class="ico-jumbotron">
+            <a href="#"><i :class=" 'fas ' + collection"></i></a>
+          </div>
+        <!-- </div> -->
       </header>
 
       <!-- main corpo centrale (6 sezioni) -->
@@ -57,74 +61,114 @@
 
         <!-- free app -->
         <section class="white container">
-          <div class="container">
-            <h2></h2>
-            <p></p>
 
-            <div class="">
-              <div class="">
-                <img src="" alt="">
-                <h4></h4>
-                <p></p>
-              </div>
-              <div class="">
-                <img src="" alt="">
-                <h4></h4>
-                <p></p>
-              </div>
-              <div class="">
-                <img src="" alt="">
-                <h4></h4>
-                <p></p>
-              </div>
-              <div class="">
-                <img src="" alt="">
-                <h4></h4>
-                <p></p>
-              </div>
-            </div>
-            <button  class="btn orange-btn" type="button" name="button">See all features <i class="fas fa-angle-right"></i></button>
+          <!-- title settingsApp -->
+          <div class="title-settingsApp">
+            <h2>Get <span>Free App</span> for your Education &
+                LMS Site.</h2>
+            <p>Huge savings of <span>Time and Money.</span>The
+               WPLMS PWA plays equally good on <span>Mobile,
+               Desktop, Tablets and TV's.</span></p>
           </div>
+
+          <!-- settingsApp -->
+          <div class="settings d-f">
+            <div class="description" v-for="setting in settingsApp">
+              <i :class=" 'fas ' + setting.icon "></i>
+              <h4>{{ setting.title }}</h4>
+              <p>{{ setting.text }}</p>
+            </div>
+          </div>
+
+          <button  class="btn orange-btn" type="button" name="button">See all features <i :class=" 'fas ' + iconBtn"></i></button>
         </section>
 
         <!-- device -->
         <section class="blue">
+
           <div class="container">
-            <h2></h2>
-            <p></p>
+
+            <!-- title settingsApp -->
+            <div class="">
+              <h2>One app for all device Mobile, Tablet, Desktop & TV</h2>
+              <p>Install and setup WPLMS version 4. Upload your
+                 App icon and splash image and <span>get your
+                 App few clicks</span> from the options panel</p>
+            </div>
+
           </div>
+
         </section>
 
         <!-- courses -->
         <section class="white">
+
           <div class="container">
-            <h2></h2>
-            <p></p>
+
+            <!-- title settingsApp -->
+            <div class="title-settingsApp">
+              <h2>Get <span>Free App</span> for your Education &
+                  LMS Site.</h2>
+              <p>Huge savings of <span>Time and Money.</span>The
+                 WPLMS PWA plays equally good on <span>Mobile,
+                 Desktop, Tablets and TV's.</span></p>
+            </div>
+
+            <button  class="btn orange-btn" type="button" name="button">See all features <i :class=" 'fas ' + iconBtn"></i></button>
+
           </div>
+
         </section>
 
         <!-- brands -->
         <section class="grey">
+
           <div class="container">
-            <h2></h2>
-            <p></p>
+
+            <!-- title settingsApp -->
+            <div class="title-settingsApp">
+              <h2>Trusted by <span>fortune 500</span> brands</h2>
+              <p>From startups to fortune 500 brands.</p>
+              <p>WPLMS is the number 1 choice to start an
+                 educational venture.</p>
+            </div>
+
           </div>
+
         </section>
 
         <!-- customers -->
         <section class="white">
+
           <div class="container">
-            <h2></h2>
-            <p></p>
+
+            <!-- title settingsApp -->
+            <div class="title-settingsApp">
+              <h2>Get <span>Free App</span> for your Education &
+                  LMS Site.</h2>
+              <p>Huge savings of <span>Time and Money.</span>The
+                 WPLMS PWA plays equally good on <span>Mobile,
+                 Desktop, Tablets and TV's.</span></p>
+            </div>
+
           </div>
+
         </section>
 
         <!-- contact sales -->
         <section class="orange">
+
           <div class="container">
-            <h2></h2>
-            <p></p>
+
+            <!-- title settingsApp -->
+            <div class="title-settingsApp">
+              <h2>Looks <span>Interesting</span> ? Get in Touch</h2>
+              <p>Think you got a great idea, get in touch with
+                 us, we can't wait to have you on board.</p>
+            </div>
+
           </div>
+
         </section>
       </main>
 

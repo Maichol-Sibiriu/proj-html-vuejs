@@ -17,14 +17,18 @@ a{
 
 h1,
 h2,
-h3,
-h4{
+h3{
   font-weight: 400;
 }
 
 p{
-  margin: 20px;
-  font-size: 12px;
+  margin: 20px 0;
+  font-size: 14px;
+  opacity: .7;
+}
+
+span{
+  font-weight: bold;
 }
 
 /* utility */
@@ -38,18 +42,21 @@ p{
 
 .blue{
   background-color: #515262;
+  color: #ffffff;
 }
 
 .white{
   background-color: #ffffff;
+  color: #515262;
 }
 
 .grey{
   background-color: #e1dace;
+  color: #515262;
 }
 
 .orange{
-  background-color: #faae2c;
+  background-color: #fdaf2a;
 }
 
 .btn{
@@ -59,6 +66,11 @@ p{
   cursor: pointer;
   font-weight: bold;
   font-size: 10px;
+}
+
+.btn i{
+  position: relative;
+  top: 1px;
 }
 
 .orange-btn{
@@ -74,7 +86,7 @@ p{
 }
 
 section{
-  padding: 40px;
+  padding: 80px 0px;
 }
 
 footer{
@@ -83,11 +95,23 @@ footer{
 
 /* header navbar*/
 header{
-  background-color: black;
-  /* background-image: url('./img/backimg.png'); */
-  height: 500px;
+  background-image: url('../img/backimg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 515px;
   position: relative;
 }
+
+/* .black{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #6c738c;
+  opacity: 0.4;
+} */
 
 header .navbar{
   font-size: 11px;
@@ -149,14 +173,21 @@ header .navbar{
 
 /* header jumbotron */
 header .jumbotron-text{
-  margin-top: 150px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 header .jumbotron-text h1{
   font-size: 35px;
 }
 
-.jumbotron-text .ico-jumbotron{
+header .jumbotron-text p{
+  opacity: 1;
+}
+
+header .ico-jumbotron{
   position: absolute;
   top: 25%;
   right: 0;
@@ -167,3 +198,28 @@ header .jumbotron-text h1{
 }
 
 /* main */
+.title-settingsApp{
+  width: 55%;
+  margin: 0 auto;
+}
+
+.settings{
+  justify-content: space-around;
+  width: 98%;
+  margin: 60px 0;
+}
+
+.settings .description i{
+  font-size: 35px;
+  opacity: .7;
+}
+
+.settings .description h4{
+  font-size: 13px;
+  margin: 20px 0px;
+}
+
+.settings .description p{
+  font-size: 10px;
+  margin: 0 10px;
+}
