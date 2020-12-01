@@ -40,6 +40,10 @@ span{
   text-transform: uppercase;
 }
 
+.op{
+  opacity: 1;
+}
+
 .blue{
   background-color: #515262;
   color: #ffffff;
@@ -183,10 +187,6 @@ header .jumbotron-text h1{
   font-size: 35px;
 }
 
-header .jumbotron-text p{
-  opacity: 1;
-}
-
 header .ico-jumbotron{
   position: absolute;
   top: 25%;
@@ -198,6 +198,7 @@ header .ico-jumbotron{
 }
 
 /* main */
+/* section 1 free app */
 .title-settingsApp{
   width: 55%;
   margin: 0 auto;
@@ -207,6 +208,10 @@ header .ico-jumbotron{
   justify-content: space-around;
   width: 98%;
   margin: 60px 0;
+}
+
+.settings .description{
+  cursor: pointer;
 }
 
 .settings .description i{
@@ -222,4 +227,36 @@ header .ico-jumbotron{
 .settings .description p{
   font-size: 10px;
   margin: 0 10px;
+}
+
+/* section 2 device */
+.title-text{
+  width: 54%;
+  margin: 0 auto;
+}
+
+.phone img{
+  width: 200px;
+}
+
+.phone{
+  background-color: #1f2b39;
+  padding: 20px 5px;
+  border-radius: 20px;
+  margin: 0 30px;
+}
+
+.device-bottom{
+  margin-top: 50px;
+}
+
+.text-device{
+  flex-basis: 38%;
+  text-align: left;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text-device p{
+  margin: 10px 0px;
 }
