@@ -271,18 +271,36 @@ header .ico-jumbotron{
   margin: 10px 0px;
 }
 
-/* section 3 */
-
-
-/* section 4 brands */
-.title-brands p{
-  margin: 0;
-}
-
+/* section 3 courses */
+.title-courses h2,
 .title-brands h2{
   margin-bottom: 20px;
 }
 
+.title-courses p,
+.title-brands p,
+.text-courses p{
+  margin: 0;
+}
+
+.img-courses{
+  flex-basis: 30%;
+  position: relative;
+}
+
+.img-courses > img{
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.text-courses{
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+  padding: 5px;
+}
+
+/* section 4 brands */
 .brands{
   width: 80%;
   margin: 40px auto 0px;
