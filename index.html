@@ -19,8 +19,8 @@
           <div class="navbar container d-f">
 
             <!-- logo -->
-            <div class="logo d-f">
-              <img :src=" './img/' + img + '.png' " alt="">
+            <div class="logo">
+              <img :src=" logo.folder + logo.name + logo.type " alt="">
             </div>
 
             <!-- lista navbar -->
@@ -100,7 +100,7 @@
 
             <!-- description device app -->
             <div class="device-bottom d-f">
-              <div class="text-device d-f">
+              <div class="text-device d-f jcc">
                 <h3>Mobile first design</h3>
                 <p>The version 4 is built with mobile centeric
                    design pattern and the latest Progressive
@@ -142,14 +142,19 @@
 
           <div class="container">
 
-            <!-- title settingsApp -->
-            <div class="title-settingsApp">
+            <!-- title brands -->
+            <div class="title-brands">
               <h2>Trusted by <span>fortune 500</span> brands</h2>
               <p>From startups to fortune 500 brands.</p>
               <p>WPLMS is the number 1 choice to start an
                  educational venture.</p>
             </div>
 
+            <div class="brands d-f">
+              <div class="img-brands d-f jcc" v-for="brand in brands">
+                <img :src="brand.folder + brand.name + brand.size + brand.type " alt="">
+              </div>
+            </div>
           </div>
 
         </section>
@@ -177,13 +182,14 @@
 
           <div class="container">
 
-            <!-- title settingsApp -->
-            <div class="title-settingsApp">
+            <!-- title contact sales -->
+            <div class="title-sales">
               <h2>Looks <span>Interesting</span> ? Get in Touch</h2>
-              <p>Think you got a great idea, get in touch with
+              <p class="op">Think you got a great idea, get in touch with
                  us, we can't wait to have you on board.</p>
             </div>
 
+            <button  class="btn white-btn" type="button" name="button">contact sales / support</button>
           </div>
 
         </section>
@@ -191,6 +197,33 @@
 
       <!-- footer logo e 3 liste link -->
       <footer class="blue">
+
+        <div class="container d-f">
+
+          <div class="logo-footer">
+            <img :src=" logo.folder + logo.name + logo.type " alt="">
+          </div>
+          <div class="list d-f">
+
+            <ul>
+              <li v-for="link in linksAbout">
+                <a href="#">{{ link }}</a>
+              </li>
+            </ul>
+            <ul>
+              <li v-for="link in linksCourses">
+                <a href="#">{{ link }}</a>
+              </li>
+            </ul>
+            <ul>
+              <li v-for="link in linksCategories">
+                <a href="#">{{ link }}</a>
+              </li>
+            </ul>
+
+          </div>
+
+        </div>
 
       </footer>
 

@@ -36,6 +36,10 @@ span{
   display: flex;
 }
 
+.jcc{
+  justify-content: center;
+}
+
 .t-u{
   text-transform: uppercase;
 }
@@ -70,6 +74,12 @@ span{
   cursor: pointer;
   font-weight: bold;
   font-size: 10px;
+}
+
+.white-btn{
+  background-color: #ffffff;
+  text-transform: uppercase;
+  color: #515262;
 }
 
 .btn i{
@@ -126,6 +136,7 @@ header .navbar{
 
 .logo{
   flex-basis: 37%;
+  text-align: left;
 }
 
 .navbar-list{
@@ -254,11 +265,30 @@ header .ico-jumbotron{
   flex-basis: 38%;
   text-align: left;
   flex-direction: column;
-  justify-content: center;
 }
 
 .text-device p{
   margin: 10px 0px;
 }
 
-/* section 3 device */
+/* section 3 */
+
+
+/* section 4 brands */
+.title-brands p{
+  margin: 0;
+}
+
+.title-brands h2{
+  margin-bottom: 20px;
+}
+
+.brands{
+  width: 80%;
+  margin: 40px auto 0px;
+  justify-content: space-around;
+}
+
+.img-brands{
+  flex-direction: column;
+}

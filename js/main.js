@@ -4,7 +4,11 @@ const app = new Vue({
   data: {
 
     // img logo header
-    img: "logo",
+    logo:{
+      folder:"./img/",
+      name: "logo",
+      type: ".png",
+    },
 
     // icona ricerca navbar
     search: "fa-search",
@@ -68,7 +72,61 @@ const app = new Vue({
       },
     ],
 
+    // sezione brands
+    // array oggetti immagine brands
+    brands:[
+      {
+        folder:"./img/",
+        name: "logo2",
+        size: "-120x47",
+        type: ".png",
+      },
+      {
+        folder:"./img/",
+        name: "logo5",
+        size: "-120x47",
+        type: ".png",
+      },
+      {
+        folder:"./img/",
+        name: "logo4",
+        size: "-120x29",
+        type: ".png",
+      },
+      {
+        folder:"./img/",
+        name: "logo3",
+        size: "-120x57",
+        type: ".png",
+      },
+    ],
 
+    // footer
+    // oggetto arrays lista di link
+    linksAbout:[
+      "About Company",
+      "Register",
+      "Activate",
+      "All Courses",
+      "Groups Directory",
+      "Members Directory",
+    ],
+    linksCourses:[
+      "Top Courses",
+      "Design Dynamics",
+      "Internet of Things Security",
+      "Deep Virtual Reality",
+      "Artificial Intelligence",
+      "Machine Learning Tools",
+    ],
+    linksCategories:[
+      "Popular Categories",
+      "Register",
+      "Activate",
+      "All Courses",
+      "Groups Directory",
+      "Members Directory",
+    ],
   }
 
 
