@@ -53,6 +53,22 @@ const app = new Vue({
     // icon btn
     iconBtn: "fa-angle-right",
 
+    // sezione device
+    // array oggetti immagini
+    deviceImgs:[
+      {
+        folder:"./img/",
+        name: "pursue",
+        type: ".png",
+      },
+      {
+        folder:"./img/",
+        name: "coruse_coure",
+        type: ".png",
+      },
+    ],
+
+
   }
 
 

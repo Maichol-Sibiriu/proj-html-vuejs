@@ -98,6 +98,7 @@
               </div>
             </div>
 
+            <!-- description device app -->
             <div class="device-bottom d-f">
               <div class="text-device d-f">
                 <h3>Mobile first design</h3>
@@ -107,11 +108,8 @@
                 <p class="op">Course pursue screen for students</p>
                 <p class="op">Course creation module for instructors</p>
               </div>
-              <div class="phone">
-                <img src="./img/pursue.png" alt="">
-              </div>
-              <div class="phone">
-                <img src="./img/coruse_coure.png" alt="">
+              <div class="phone" v-for="img in deviceImgs">
+                <img :src=" img.folder + img.name + img.type " alt="">
               </div>
             </div>
 
