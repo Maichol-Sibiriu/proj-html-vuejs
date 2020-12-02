@@ -101,6 +101,47 @@ const app = new Vue({
       },
     ],
 
+    // sezione customers
+    // array di oggetti per info customers
+    information:[
+      {
+        title: "A must for trainers",
+        text: "There are many variatons of passages of Lorem Ipsum available, but the majority have suffered...",
+        img: {
+          folder:"./img/",
+          avatar: "instructor3",
+          size: "-100x100",
+          type: ".jpg",
+        },
+        name: "JP Mcgraw",
+        section: "ABC Inc.",
+      },
+      {
+        title: "Great platform for low cost courses",
+        text: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered...",
+        img: {
+          folder:"./img/",
+          avatar: "instructor1",
+          size: "-100x100",
+          type: ".jpg",
+        },
+        name: "Martha Penn",
+        section: "ABC Inc.",
+      },
+      {
+        title: "Quality hands on training tool",
+        text: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered...",
+        img: {
+          folder:"./img/",
+          avatar: "instructor2",
+          size: "-100x100",
+          type: ".jpg",
+        },
+        name: "Mikhail",
+        section: "CEO, FinTech",
+      },
+    ],
+
     // footer
     // oggetto arrays lista di link
     linksAbout:[

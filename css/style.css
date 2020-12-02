@@ -312,6 +312,31 @@ header .ico-jumbotron{
   flex-direction: column;
 }
 
+/* section 5 customers */
+.customers{
+  margin-top: 80px;
+  justify-content: space-around;
+}
+
+.info-customers{
+  flex-basis: 25%;
+}
+
+.customers .info-customers p{
+  font-size: 11px;
+  margin: 10px 0px;
+}
+
+.customers .info-customers p span{
+  text-transform: uppercase;
+}
+
+.customers .info-customers img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
 /* footer */
 footer{
   position: relative;

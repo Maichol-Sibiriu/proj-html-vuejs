@@ -53,6 +53,7 @@
           <div class="ico-jumbotron">
             <a href="#"><i :class=" 'fas ' + collection"></i></a>
           </div>
+
         <!-- </div> -->
       </header>
 
@@ -179,6 +180,19 @@
               <h2>What out <span>Customers say</span> about us</h2>
               <p>Excellence speacks for itself. Coporates,
                  Students, Instructors, and Academy.</p>
+            </div>
+
+            <!-- info customers -->
+            <div class="customers d-f jcc">
+
+              <div class="info-customers" v-for="info in information">
+                <h4>{{ info.title }}</h4>
+                <p>{{ info.text }}<span>read more</span></p>
+                <img :src=" info.img.folder + info.img.avatar + info.img.size + info.img.type " alt="">
+                <h4>{{ info.name }}</h4>
+                <p>{{ info.section }}</p>
+              </div>
+
             </div>
 
           </div>
