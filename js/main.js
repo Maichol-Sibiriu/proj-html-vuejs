@@ -127,6 +127,9 @@ const app = new Vue({
       "Groups Directory",
       "Members Directory",
     ],
+
+    // icon footer
+    top: "fa-angle-double-up",
   }
 
 

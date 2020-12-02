@@ -208,21 +208,30 @@
 
         <div class="container d-f">
 
+          <!-- logo footer -->
           <div class="logo-footer">
             <img :src=" logo.folder + logo.name + logo.type " alt="">
+            <p>We make great apps</p>
           </div>
+
+          <!-- list links footer -->
           <div class="list d-f">
 
+            <!-- links about -->
             <ul>
               <li v-for="link in linksAbout">
                 <a href="#">{{ link }}</a>
               </li>
             </ul>
+
+            <!-- links courses -->
             <ul>
               <li v-for="link in linksCourses">
                 <a href="#">{{ link }}</a>
               </li>
             </ul>
+
+            <!-- links categories -->
             <ul>
               <li v-for="link in linksCategories">
                 <a href="#">{{ link }}</a>
@@ -233,6 +242,10 @@
 
         </div>
 
+        <!-- icona footer per top -->
+        <div class="ico-footer">
+          <a href="#"><i :class=" 'fas ' + top + ' fa-2x' "></i>TOP</a>
+        </div>
       </footer>
 
     </div>

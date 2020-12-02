@@ -49,7 +49,7 @@ span{
 }
 
 .blue{
-  background-color: #515262;
+  background-color: #53505d;
   color: #ffffff;
 }
 
@@ -104,7 +104,7 @@ section{
 }
 
 footer{
-  padding: 10px 0px 40px;
+  padding: 20px 0px 80px;
 }
 
 /* header navbar*/
@@ -279,7 +279,8 @@ header .ico-jumbotron{
 
 .title-courses p,
 .title-brands p,
-.text-courses p{
+.text-courses p,
+.logo-footer p{
   margin: 0;
 }
 
@@ -309,4 +310,49 @@ header .ico-jumbotron{
 
 .img-brands{
   flex-direction: column;
+}
+
+/* footer */
+footer{
+  position: relative;
+}
+
+.logo-footer{
+  text-align: left;
+}
+
+.logo-footer img{
+  width: 80px;
+}
+
+footer .list ul{
+  text-align: left;
+  margin-left: 120px;
+  list-style: none;
+  font-size: 13px;
+  opacity: .7;
+}
+
+footer .list ul li{
+  margin-bottom: 10px;
+}
+
+footer .list ul li:first-child,
+.ico-footer{
+  font-weight: bold;
+}
+
+.ico-footer{
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  padding: 6px;
+  background-color: #232423;
+  font-size: 8px;
+  border-radius: 2px;
+}
+
+.ico-footer a i{
+  display: block;
+  text-align: center;
 }
