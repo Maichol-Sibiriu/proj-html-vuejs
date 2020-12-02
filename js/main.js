@@ -72,6 +72,87 @@ const app = new Vue({
       },
     ],
 
+    // sezione Courses
+    // array di oggetti immagini e testi
+    courses:[
+        {
+          img: {
+            folder:"./img/",
+            name: "course4",
+            size: "-310x186",
+            type: ".png",
+          },
+          title: "Software training reloaded",
+          sections: {
+            secOne: "information tech",
+            secTwo: "machine learning",
+            secThree: "technology",
+          },
+        },
+        {
+          img: {
+            folder:"./img/",
+            name: "course3",
+            size: "-310x186",
+            type: ".png",
+          },
+          title: "Data mining",
+          sections: {
+            secOne: "data",
+          },
+        },
+        {
+          img: {
+            folder:"./img/",
+            name: "course2-1",
+            size: "-310x186",
+            type: ".png",
+          },
+          title: "Design Dynamics",
+          sections: {
+            secOne: "design",
+            secTwo: "information tech",
+          },
+        },
+        {
+          img: {
+            folder:"./img/",
+            name: "course6",
+            size: "-310x186",
+            type: ".png",
+          },
+          title: "Understanding Color Psychology",
+          sections: {
+            secOne: "design",
+          },
+        },
+        {
+          img: {
+            folder:"./img/",
+            name: "course7",
+            size: "-310x186",
+            type: ".png",
+          },
+          title: "Impact of a Minimalist Design",
+          sections: {
+            secOne: "design",
+          },
+        },
+        {
+          img: {
+            folder:"./img/",
+            name: "course1",
+            size: "-310x186",
+            type: ".png",
+          },
+          title: "Machine Learning Tools",
+          sections: {
+            secOne: "intelligence",
+            secTwo: "technology",
+          },
+        },
+    ],
+
     // sezione brands
     // array oggetti immagine brands
     brands:[

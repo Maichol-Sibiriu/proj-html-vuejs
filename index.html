@@ -131,15 +131,13 @@
             </div>
 
             <div class="courses d-f">
-
-              <div class="img-courses">
-                <img src="./img/course4-310x186.png" alt="">
+              <div class="img-courses" v-for="course in courses">
+                <img :src=" course.img.folder + course.img.name + course.img.size + course.img.type" alt="">
                 <div class="text-courses">
-                  <h3>ciao ciao ciao</h3>
-                  <p>ioioioioio</p>
+                  <h3>{{ course.title }}</h3>
+                  <p>{{ course.sections.secOne }} <span>{{ course.sections.secTwo }}</span> {{ course.sections.secThree }}</p>
                 </div>
               </div>
-
             </div>
 
             <button  class="btn orange-btn" type="button" name="button">See all features <i :class=" 'fas ' + iconBtn"></i></button>

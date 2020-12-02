@@ -284,21 +284,29 @@ header .ico-jumbotron{
   margin: 0;
 }
 
-.img-courses{
+.courses{
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.courses .img-courses{
   flex-basis: 30%;
+  margin: 10px 0px;
   position: relative;
 }
 
-.img-courses > img{
+.courses .img-courses img{
   max-width: 100%;
   border-radius: 10px;
 }
 
-.text-courses{
+.courses .img-courses .text-courses{
   position: absolute;
-  left: 15px;
-  bottom: 15px;
-  padding: 5px;
+  bottom: 20px;
+  left: 30px;
+  color: white;
+  text-align: left;
+
 }
 
 /* section 4 brands */
