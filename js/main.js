@@ -240,6 +240,9 @@ const app = new Vue({
       "All Courses",
       "Groups Directory",
       "Members Directory",
+      "Education & LMS",
+      "Custom Features",
+      "Support",
     ],
     linksCourses:[
       "Top Courses",
@@ -248,6 +251,9 @@ const app = new Vue({
       "Deep Virtual Reality",
       "Artificial Intelligence",
       "Machine Learning Tools",
+      "Brands",
+      "Gallery",
+      "Design Dynamics",
     ],
     linksCategories:[
       "Popular Categories",
@@ -256,6 +262,9 @@ const app = new Vue({
       "All Courses",
       "Groups Directory",
       "Members Directory",
+      "App",
+      "Platform",
+      "Trainers",
     ],
 
     // icon footer
