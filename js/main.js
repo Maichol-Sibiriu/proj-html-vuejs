@@ -98,7 +98,8 @@ const app = new Vue({
           },
           title: "Data mining",
           sections: {
-            secOne: "data",
+            secOne: "",
+            secTwo: "data",
           },
         },
         {
@@ -110,8 +111,9 @@ const app = new Vue({
           },
           title: "Design Dynamics",
           sections: {
-            secOne: "design",
-            secTwo: "information tech",
+            secOne: "",
+            secTwo: "design",
+            secThree: "information tech",
           },
         },
         {
@@ -123,7 +125,8 @@ const app = new Vue({
           },
           title: "Understanding Color Psychology",
           sections: {
-            secOne: "design",
+            secOne: "",
+            secTwo: "design",
           },
         },
         {
@@ -135,7 +138,8 @@ const app = new Vue({
           },
           title: "Impact of a Minimalist Design",
           sections: {
-            secOne: "design",
+            secOne: "",
+            secTwo: "design",
           },
         },
         {
@@ -147,8 +151,9 @@ const app = new Vue({
           },
           title: "Machine Learning Tools",
           sections: {
-            secOne: "intelligence",
-            secTwo: "technology",
+            secOne: "",
+            secTwo: "intelligence",
+            secThree: "technology",
           },
         },
     ],

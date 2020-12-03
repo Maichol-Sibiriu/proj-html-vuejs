@@ -13,7 +13,6 @@
 
       <!-- header logo e navbar -->
       <header>
-        <!-- <div class="black"> -->
 
           <!-- logo e navbar -->
           <div class="navbar container d-f">
@@ -54,7 +53,6 @@
             <a href="#"><i :class=" 'fas ' + collection"></i></a>
           </div>
 
-        <!-- </div> -->
       </header>
 
       <!-- main corpo centrale (6 sezioni) -->
@@ -135,7 +133,7 @@
                 <img :src=" course.img.folder + course.img.name + course.img.size + course.img.type" alt="">
                 <div class="text-courses">
                   <h3>{{ course.title }}</h3>
-                  <span>{{ course.sections.secOne }}</span>
+                  <p v-show="course.sections.secOne !== '' " >{{ course.sections.secOne }}</p>
                   <span>{{ course.sections.secTwo }}</span>
                   <span>{{ course.sections.secThree }}</span>
                 </div>
