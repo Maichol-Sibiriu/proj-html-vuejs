@@ -48,6 +48,10 @@ span{
   opacity: 1;
 }
 
+.z{
+  z-index: 1;
+}
+
 .blue{
   background-color: #313c59;
   color: #ffffff;
@@ -89,7 +93,7 @@ span{
 
 .orange-btn{
   color: white;
-  background: #ffae29;
+  background-color: #ffae29;
 }
 
 /* layout */
@@ -210,6 +214,10 @@ header .ico-jumbotron{
   border-radius: 2px;
 }
 
+header .ico-jumbotron{
+  opacity: .7;
+}
+
 /* main */
 /* section 1 free app */
 .title-settingsApp{
@@ -326,28 +334,80 @@ header .ico-jumbotron{
 
 .courses .img-courses .text-courses{
   position: absolute;
-  bottom: 20px;
-  left: 30px;
+  bottom: 15px;
+  left: 20px;
   color: white;
   text-align: left;
-  z-index: 1;
 }
 
-.courses .img-courses .text-courses h3{
-  font-size: 23px;
-  line-height: 21px;
+.courses .img-courses .text-courses .h3-courses h3{
+  font-size: 25px;
+  line-height: 23px;
   margin-bottom: 10px;
 }
 
-.courses .img-courses .text-courses p,
-.courses .img-courses .text-courses span{
-  text-transform: uppercase;
-  opacity: 1;
-  font-size: 13px;
+.courses .img-courses .text-courses .h3-courses{
+  position: relative;
 }
 
-.courses .img-courses .text-courses span{
-  font-weight: unset;
+.courses .img-courses .text-courses .h3-courses::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -3%;
+  width: 2px;
+  height: 100%;
+  background-color: orange;
+  border-radius: 2px;
+}
+
+.courses .img-courses .text-courses .p-courses{
+  padding-left: 2px;
+}
+
+.courses .img-courses .text-courses .p-courses p,
+.courses .img-courses .text-courses .p-courses .pseudo div{
+  text-transform: uppercase;
+  opacity: 1;
+  font-size: 11px;
+  position: relative;
+  font-weight: bold;
+}
+
+.courses .img-courses .text-courses .p-courses p::after{
+  content: "";
+  position: absolute;
+  bottom: -25%;
+  right: 54%;
+  width: 1px;
+  height: 10px;
+  background-color: rgba(255,255,255, .7);
+  transform: rotate(20deg);
+}
+
+.pseudo{
+  display: flex;
+  margin-top: 5px;
+}
+
+.pseudo div{
+  margin-right: 15px;
+}
+
+.pseudo div:last-child{
+  margin-right: 0px;
+  position: relative;
+}
+
+.pseudo div:last-child::after{
+  content: "";
+  position: absolute;
+  bottom: -25%;
+  left: -7%;
+  width: 1px;
+  height: 10px;
+  background-color: rgba(255,255,255, .7);
+  transform: rotate(20deg);
 }
 
 /* section 4 brands */
@@ -429,4 +489,8 @@ footer .list ul li:first-child,
 .ico-footer a i{
   display: block;
   text-align: center;
+}
+
+.ico-footer a{
+  opacity: .7;
 }

@@ -100,6 +100,7 @@ const app = new Vue({
           sections: {
             secOne: "",
             secTwo: "data",
+            secThree: "",
           },
         },
         {
@@ -127,6 +128,7 @@ const app = new Vue({
           sections: {
             secOne: "",
             secTwo: "design",
+            secThree: "",
           },
         },
         {
@@ -140,6 +142,7 @@ const app = new Vue({
           sections: {
             secOne: "",
             secTwo: "design",
+            secThree: "",
           },
         },
         {

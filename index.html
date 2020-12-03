@@ -18,7 +18,7 @@
           <div class="navbar container d-f">
 
             <!-- logo -->
-            <div class="logo">
+            <div class="logo z">
               <img :src=" logo.folder + logo.name + logo.type " alt="">
             </div>
 
@@ -30,11 +30,11 @@
                   <a href="#">{{ link }}</a>
                 </li>
               </ul>
-              <a href="#"><i :class=" 'fas ' + search"></i></a>
+              <a href="#" class="z" ><i :class=" 'fas ' + search"></i></a>
             </div>
 
             <!-- account login con store -->
-            <div class="account d-f">
+            <div class="account d-f z">
               <a href="#">{{ account.link }}</a>
               <a href="#"><i :class=" 'fas ' + account.icon"></i></a>
             </div>
@@ -128,14 +128,21 @@
               <p>Join <span>560,000 Students</span> enrolled in the site.</p>
             </div>
 
+            <!-- images courses -->
             <div class="courses d-f">
               <div class="img-courses" v-for="course in courses">
                 <img :src=" course.img.folder + course.img.name + course.img.size + course.img.type" alt="">
-                <div class="text-courses">
-                  <h3>{{ course.title }}</h3>
-                  <p v-show="course.sections.secOne !== '' " >{{ course.sections.secOne }}</p>
-                  <span>{{ course.sections.secTwo }}</span>
-                  <span>{{ course.sections.secThree }}</span>
+                <div class="text-courses z">
+                  <div class="h3-courses">
+                    <h3>{{ course.title }}</h3>
+                  </div>
+                  <div class="p-courses">
+                    <p v-show="course.sections.secOne !== '' " >{{ course.sections.secOne }}</p>
+                    <div class="pseudo">
+                      <div>{{ course.sections.secTwo }}</div>
+                      <div v-show="course.sections.secThree !== '' ">{{ course.sections.secThree }}</div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -159,6 +166,7 @@
                  educational venture.</p>
             </div>
 
+            <!-- images brands -->
             <div class="brands d-f">
               <div class="img-brands d-f jcc" v-for="brand in brands">
                 <img :src="brand.folder + brand.name + brand.size + brand.type " alt="">
