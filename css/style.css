@@ -141,16 +141,16 @@ header .navbar{
 }
 
 .logo{
-  flex-basis: 37%;
+  flex-basis: 10%;
   text-align: left;
 }
 
 .navbar-list{
-  flex-basis: 35%;
+  flex-grow: 1;
 }
 
 .account{
-  flex-basis: 27%;
+  flex-basis: 25%;
 }
 
 .logo img{
@@ -428,7 +428,7 @@ header .ico-jumbotron{
 }
 
 .info-customers{
-  flex-basis: 25%;
+  flex-basis: 26%;
 }
 
 .customers .info-customers p{
@@ -461,10 +461,14 @@ footer{
 
 footer .list ul{
   text-align: left;
-  margin-left: 90px;
   list-style: none;
   font-size: 11px;
   opacity: .7;
+}
+
+footer .list{
+  flex-grow: 1;
+  justify-content: space-around;
 }
 
 footer .list ul li{
