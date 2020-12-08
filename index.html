@@ -31,8 +31,8 @@
                   <a href="#">{{ link }}</a>
                 </li>
                 <li  class="d-f"
-                     v-for="linkLogin in linksLogin"
-                    v-show=" login == false">
+                     v-for="linkLogin in add()"
+                     v-show=" login == false">
                   <a href="#">{{ linkLogin }}</a>
                 </li>
               </ul>
@@ -42,7 +42,11 @@
             <!-- account login con store -->
             <div class="account d-f z">
               <a href="#"
-                 @click=" login = !login " >{{ account.link }}</a>
+                 @click=" login = !login "
+                 v-if="login == true">{{ account.link }}</a>
+              <a href="#"
+                 @click=" login = !login "
+                 v-else>{{ account.output }}</a>
               <a href="#"><i :class=" 'fas ' + account.icon"></i></a>
             </div>
 

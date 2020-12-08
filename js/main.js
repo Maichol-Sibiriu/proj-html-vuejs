@@ -13,7 +13,7 @@ const app = new Vue({
     // icona ricerca navbar
     search: "fa-search",
 
-    // array oggetti icone e link header
+    // array oggetti icone e links header
     links:[
       "home",
       "courses",
@@ -21,22 +21,20 @@ const app = new Vue({
       "app",
     ],
 
+    // array links login
     linksLogin:[
-      "home",
-      "courses",
-      "pages",
-      "app",
       "setting",
       "profile",
       "diary",
     ],
 
-    // array vuoto per concatenazione login
+    // riferimento per aggiunta links login
     login: true,
 
     account:{
       link: "login",
       icon:"fa-shopping-cart",
+      output:"logout"
     },
 
     // raccolta foto header
@@ -285,12 +283,10 @@ const app = new Vue({
     top: "fa-angle-double-up",
   },
   methods:{
-    // add(){
-    //   this.login = this.links.concat(this.linksd);
-    // }
+    add(){
+      return this.links.concat(this.linksLogin);
+    }
 
   }
-
-
 
 });
