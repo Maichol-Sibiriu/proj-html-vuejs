@@ -40,6 +40,19 @@ const app = new Vue({
     // raccolta foto header
     collection: "fa-images",
 
+    // galleria immagini header
+    gallery:[
+      "./img/1-1.jpg",
+      "./img/course5.png",
+      "./img/course8.png",
+    ],
+
+    // riferimento per galleria immagini header
+    indexGallery: 0,
+
+    // riferimento per visione galleria
+    show: false,
+
     // main
     // array oggetti sezione free app
     settingsApp:[
@@ -283,9 +296,29 @@ const app = new Vue({
     top: "fa-angle-double-up",
   },
   methods:{
+
+    // aggiunta link al login
     add(){
       return this.links.concat(this.linksLogin);
-    }
+    },
+
+    // change image right in gallery header
+    nextImg(){
+      this.indexGallery += 1;
+
+      if (this.indexGallery > this.gallery.length - 1) {
+         this.indexGallery = 0;
+      }
+    },
+
+    // change image left in gallery header
+    prevImg(){
+      this.indexGallery -= 1;
+
+      if (this.indexGallery < 0) {
+         this.indexGallery = this.gallery.length - 1;
+      }
+    },
 
   }
 

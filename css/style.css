@@ -218,6 +218,45 @@ header .ico-jumbotron{
   opacity: .7;
 }
 
+/* gallery images header */
+header .images-gallery{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 460px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(36, 37, 42, .9);
+}
+
+header .images-gallery i{
+  cursor: pointer;
+  color: black;
+  background-color: white;
+  border-radius: 50%;
+}
+
+header .images-gallery .fa-times{
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  color: red;
+  background-color: transparent;
+}
+
+header .images-gallery .gallery{
+  flex-basis: 500px;
+  height: 300px;
+}
+
+header .images-gallery .gallery img{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
 /* main */
 /* section 1 free app */
 .title-settingsApp{

@@ -61,7 +61,22 @@
 
           <!-- gallery -->
           <div class="ico-jumbotron">
-            <a href="#"><i :class=" 'fas ' + collection"></i></a>
+            <a href="#"
+               @click=" show = true "><i :class=" 'fas ' + collection"></i></a>
+          </div>
+
+          <!-- images gallery -->
+          <div class="images-gallery"
+               v-show=" show == true ">
+            <i class="fas fa-arrow-circle-left fa-2x"
+               @click="prevImg"></i>
+            <div class="gallery">
+              <img :src="gallery[indexGallery]" alt="">
+            </div>
+            <i class="fas fa-arrow-circle-right fa-2x"
+               @click="nextImg"></i>
+            <i class="fas fa-times fa-lg"
+               @click=" show = false "></i>
           </div>
 
       </header>
