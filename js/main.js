@@ -20,6 +20,20 @@ const app = new Vue({
       "pages",
       "app",
     ],
+
+    linksLogin:[
+      "home",
+      "courses",
+      "pages",
+      "app",
+      "setting",
+      "profile",
+      "diary",
+    ],
+
+    // array vuoto per concatenazione login
+    login: true,
+
     account:{
       link: "login",
       icon:"fa-shopping-cart",
@@ -269,6 +283,12 @@ const app = new Vue({
 
     // icon footer
     top: "fa-angle-double-up",
+  },
+  methods:{
+    // add(){
+    //   this.login = this.links.concat(this.linksd);
+    // }
+
   }
 
 

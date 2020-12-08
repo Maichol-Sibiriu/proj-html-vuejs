@@ -26,8 +26,14 @@
             <div class="navbar-list d-f">
               <ul class="d-f">
                 <li  class="d-f"
-                     v-for="link in links">
+                     v-for="link in links"
+                     v-show=" login == true">
                   <a href="#">{{ link }}</a>
+                </li>
+                <li  class="d-f"
+                     v-for="linkLogin in linksLogin"
+                    v-show=" login == false">
+                  <a href="#">{{ linkLogin }}</a>
                 </li>
               </ul>
               <a href="#" class="z" ><i :class=" 'fas ' + search"></i></a>
@@ -35,7 +41,8 @@
 
             <!-- account login con store -->
             <div class="account d-f z">
-              <a href="#">{{ account.link }}</a>
+              <a href="#"
+                 @click=" login = !login " >{{ account.link }}</a>
               <a href="#"><i :class=" 'fas ' + account.icon"></i></a>
             </div>
 
